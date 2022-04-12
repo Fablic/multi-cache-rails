@@ -13,3 +13,11 @@ end
 appraise 'railties52' do
   gem 'railties', '~> 5.2.0'
 end
+
+appraise 'railties60' do
+  gem 'railties', '~> 6.0.4.7'
+end
+
+appraise 'railties61' do
+  gem 'railties', '~> 6.1.0'
+end

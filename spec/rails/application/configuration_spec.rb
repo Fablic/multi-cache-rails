@@ -1,7 +1,7 @@
 require 'spec_helper'
 describe Rails::Application::Configuration do
   describe '#cache_store' do
-    let(:configuration) { Rails::Application::Configuration.new }
+    let(:configuration) { Rails::Application::Configuration.new(Pathname.new('')) }
 
     context 'default' do
       subject { configuration.cache_store }

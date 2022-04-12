@@ -1,0 +1,33 @@
+name: Ruby
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  BUNDLE_VERSION: 1.17.3
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Ruby, JRuby and TruffleRuby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+
+      - name: install bundler
+        run: gem install bundler -v $BUNDLE_VERSION
+
+      - name: Install dependencies
+        run: bundle _${BUNDLE_VERSION}_ install
+
+      - name: Appraisal install
+        run: bundle exec appraisal install
+
+      - name: Run tests
+        run: bundle exec appraisal rspec

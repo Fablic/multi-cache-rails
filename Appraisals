@@ -11,5 +11,5 @@ appraise 'railties61' do
 end
 
 appraise 'railties70' do
-  gem 'railties', '~> 7.0.8.4'
+  gem 'railties', '~> 7.0.0'
 end

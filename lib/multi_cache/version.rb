@@ -1,5 +1,5 @@
 module MultiCache
   module Rails
-    VERSION = '5.2.6'
+    VERSION = '5.3.0'
   end
 end

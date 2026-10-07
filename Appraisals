@@ -1,15 +1,11 @@
-appraise 'railties50' do
-  gem 'railties', '~> 5.0.0'
+appraise 'railties71' do
+  gem 'railties', '~> 7.1.0'
 end
 
-appraise 'railties60' do
-  gem 'railties', '~> 6.0.4.7'
+appraise 'railties72' do
+  gem 'railties', '~> 7.2.0'
 end
 
-appraise 'railties61' do
-  gem 'railties', '~> 6.1.0'
-end
-
-appraise 'railties70' do
-  gem 'railties', '~> 7.0.0'
+appraise 'railties80' do
+  gem 'railties', '~> 8.0.0'
 end

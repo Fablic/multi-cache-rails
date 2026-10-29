@@ -10,7 +10,7 @@ module Rails
           }
 
           if Rails.cache(name).respond_to?(:middleware)
-            config.middleware.insert_before("Rack::Runtime", Rails.cache(name).middleware)
+            config.middleware.insert_before(::Rack::Runtime, Rails.cache(name).middleware)
           end
         end
       end
